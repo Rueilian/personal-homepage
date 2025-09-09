@@ -1,7 +1,7 @@
 {
   "name": "personal-homepage",
   "version": "1.0.0",
-  "description": "Personal homepage for William Ruel-Lian Ting",
+  "description": "Personal homepage for William Ruei-Lian Ting",
   "main": "assets/index.html",
   "scripts": {
     "build": "tsc",
@@ -17,7 +17,7 @@
     "typescript",
     "academic"
   ],
-  "author": "William Ruel-Lian Ting",
+  "author": "William Ruei-Lian Ting",
   "license": "MIT"
 }
 

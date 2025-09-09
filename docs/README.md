@@ -1,4 +1,4 @@
-## William Ruel‑Lian Ting — Personal Homepage
+## William Ruei‑Lian Ting — Personal Homepage
 
 How to use:
 

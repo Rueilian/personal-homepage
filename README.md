@@ -1,6 +1,6 @@
 # Personal Homepage
 
-A modern, responsive personal homepage for William Ruel-Lian Ting, showcasing academic background, skills, projects, and professional experience.
+A modern, responsive personal homepage for William Ruei-Lian Ting, showcasing academic background, skills, projects, and professional experience.
 
 ## Features
 
@@ -78,5 +78,5 @@ MIT License - see LICENSE file for details.
 ## Contact
 
 - Email: rueilian.ting1639@gmail.com
-- LinkedIn: [William Ruel-Lian Ting](https://linkedin.com/in/williamting123)
+- LinkedIn: [William Ruei-Lian Ting](https://linkedin.com/in/williamting123)
 - GitHub: [williamting123](https://github.com/williamting123)

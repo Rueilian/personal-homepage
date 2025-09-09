@@ -1,0 +1,9 @@
+# Photos Folder
+
+This folder is for your personal photos. You can add:
+
+- headshot.jpg - Your professional headshot (200x200px recommended)
+- project-images/ - Images for your projects
+- other-photos/ - Any other images you want to use
+
+The headshot image should be named "headshot.jpg" and placed directly in this folder for the homepage to display it properly.
