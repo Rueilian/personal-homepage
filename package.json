@@ -1,0 +1,23 @@
+{
+  "name": "personal-homepage",
+  "version": "1.0.0",
+  "description": "Personal homepage for William Ruel-Lian Ting",
+  "main": "assets/index.html",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "dev": "tsc && python -m http.server 8000",
+    "serve": "python -m http.server 8000"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "personal-homepage",
+    "typescript",
+    "academic"
+  ],
+  "author": "William Ruel-Lian Ting",
+  "license": "MIT"
+}
+
