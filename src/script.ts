@@ -40,17 +40,17 @@ document.querySelectorAll('a').forEach((element: Element): void => {
 // Dark Mode Toggle
 function initDarkMode(): void {
   const darkModeToggle: HTMLElement | null = document.getElementById('dark-mode-toggle');
-  const htmlElement: HTMLElement = document.documentElement;
+  const body: HTMLElement = document.body;
   
   const savedTheme: string | null = localStorage.getItem('theme');
   if (savedTheme === 'dark') {
-    htmlElement.classList.add('dark-mode');
+    body.classList.add('dark-mode');
   }
   
   if (darkModeToggle) {
     darkModeToggle.addEventListener('click', (): void => {
-      htmlElement.classList.toggle('dark-mode');
-      const isDark: boolean = htmlElement.classList.contains('dark-mode');
+      body.classList.toggle('dark-mode');
+      const isDark: boolean = body.classList.contains('dark-mode');
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
   }
