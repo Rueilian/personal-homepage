@@ -15,6 +15,7 @@
       <nav class="nav container">
         <div class="brand">William Ruei‑Lian Ting</div>
         <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+        <button id="dark-mode-toggle" class="dark-mode-btn" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -25,6 +26,12 @@
     </header>
 
     <main id="home" class="container">
+      <div class="search-section">
+        <input type="text" id="search-input" class="search-bar" placeholder="🔍 Search experience, skills, achievements...">
+        <div id="search-results"></div>
+      </div>
+
+      <section id="stats-container" class="stats-section"></section>
       <section class="hero">
         <img class="headshot" src="photos/headshot.jpg" alt="Professional headshot of William Ruei-Lian Ting">
         <div class="intro">
@@ -59,22 +66,22 @@
       <section id="experience" class="section">
         <h2>Professional Experience</h2>
         <ul class="timeline">
-          <li>
+          <li data-searchable="true">
             <div class="title">Project Manager, Lander Simulation &amp; Training Solutions</div>
             <div class="meta">Sep. 2025 – Present</div>
             <div class="meta-sub">Coordinate technical communication with Taiwan Railway Company</div>
           </li>
-          <li>
+          <li data-searchable="true">
             <div class="title">Leader, NTUEE Student Association – Academic Affairs Group</div>
             <div class="meta">Jul. 2024 – Jun. 2025</div>
             <div class="meta-sub">Managed NTUEE Makerspace Lab and organized workshops for 100+ students</div>
           </li>
-          <li>
+          <li data-searchable="true">
             <div class="title">Lecturer, LiuYin Education – High-School Math &amp; Natural Science Courses</div>
             <div class="meta">Jul. 2023 – Jan. 2024</div>
             <div class="meta-sub">Delivered courses to 100+ students, helping them excel in national exams</div>
           </li>
-          <li>
+          <li data-searchable="true">
             <div class="title">Digital Circuits &amp; Systems Lab, NTU GIEE</div>
             <div class="meta">Sep. 2024 – Present | PI: Prof. Chia-Hsiang Yang</div>
             <ul class="nested-list">
@@ -148,6 +155,16 @@
           <li><strong>English</strong> – GEPT Higher-Intermediate Certificate, TOEIC 960 (Golden Certificate)</li>
           <li><strong>Japanese</strong> – JLPT N1 Certificate</li>
         </ul>
+      </section>
+
+      <section id="newsletter" class="section newsletter-section">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to get updates on new projects and insights.</p>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Enter your email" required>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+        <div id="newsletter-message" class="newsletter-message"></div>
       </section>
     </main>
 
