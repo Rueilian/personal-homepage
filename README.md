@@ -1,11 +1,11 @@
 # Personal Homepage
 
-A modern, responsive personal homepage for William Ruei-Lian Ting, showcasing academic background, skills, projects, and professional experience.
+A modern, responsive single-page portfolio for William Ruei-Lian Ting, showcasing education, professional experience, research, skills, and achievements.
 
 ## Features
 
-- **Responsive Design**: Mobile-first approach with clean, modern UI
-- **Multi-page Navigation**: Separate pages for skills, projects, talks, and publications
+- **Single-page Design**: Smooth scrolling navigation with anchor links
+- **Responsive Layout**: Mobile-first approach with clean, modern UI
 - **TypeScript**: Type-safe JavaScript with build system
 - **Modern CSS**: Clean styling with CSS Grid and Flexbox
 - **Accessibility**: Semantic HTML and ARIA labels
@@ -13,22 +13,19 @@ A modern, responsive personal homepage for William Ruei-Lian Ting, showcasing ac
 ## Project Structure
 
 ```
-personal_homepage/
-├── assets/           # Static assets (HTML, CSS, images)
-│   ├── index.html
-│   ├── skills.html
-│   ├── projects.html
-│   ├── talks.html
-│   ├── publications.html
-│   └── styles.css
-├── src/             # Source code
-│   ├── script.ts    # TypeScript source
-│   └── dist/        # Compiled JavaScript output
-├── docs/            # Documentation
-├── node_modules/    # Dependencies
-├── package.json     # Project configuration
-├── tsconfig.json    # TypeScript configuration
-└── README.md        # This file
+personal-homepage/
+├── assets/              # Static assets
+│   ├── index.html       # Main homepage (single page)
+│   ├── styles.css       # Styling
+│   └── photos/          # Images
+├── src/
+│   ├── script.ts        # TypeScript source for interactivity
+│   └── dist/            # Compiled JavaScript output
+├── docs/                # Documentation
+├── node_modules/        # Dependencies
+├── package.json         # Project configuration
+├── tsconfig.json        # TypeScript configuration
+└── README.md            # This file
 ```
 
 ## Development
@@ -49,19 +46,25 @@ personal_homepage/
 ### Available Scripts
 
 - `npm run build` - Compile TypeScript to JavaScript
-- `npm run watch` - Watch for changes and recompile
-- `npm run dev` - Build and start development server
-- `npm run serve` - Start static file server
 
-### Development Server
-
-To run the development server:
+### Building
 
 ```bash
-npm run dev
+npm run build
 ```
 
-This will compile TypeScript and start a local server at `http://localhost:8000`.
+This compiles TypeScript from `src/script.ts` to `src/dist/script.js`.
+
+## Content Sections
+
+The homepage includes:
+
+- **About Me**: Professional summary and contact information
+- **Education**: Dual degree programs at NTU
+- **Professional Experience**: Work roles and research projects
+- **Achievements**: Awards and certifications
+- **Skills & Expertise**: Programming languages, tools, and specializations
+- **Languages & Certifications**: Language proficiencies
 
 ## Technologies Used
 
@@ -69,7 +72,6 @@ This will compile TypeScript and start a local server at `http://localhost:8000`
 - **CSS3**: Modern styling with Grid and Flexbox
 - **TypeScript**: Type-safe JavaScript
 - **Node.js**: Development environment
-- **Python**: Simple HTTP server for development
 
 ## License
 
@@ -78,5 +80,5 @@ MIT License - see LICENSE file for details.
 ## Contact
 
 - Email: rueilian.ting1639@gmail.com
-- LinkedIn: [William Ruei-Lian Ting](https://linkedin.com/in/williamting123)
-- GitHub: [williamting123](https://github.com/williamting123)
+- LinkedIn: [Rueilian Ting](https://linkedin.com/in/rueilian-ting-839700329)
+- GitHub: [Rueilian](https://github.com/Rueilian)
