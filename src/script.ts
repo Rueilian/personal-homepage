@@ -56,48 +56,6 @@ function initDarkMode(): void {
   }
 }
 
-// Search Functionality
-function initSearch(): void {
-  const searchInput: HTMLInputElement | null = document.querySelector('#search-input') as HTMLInputElement;
-  const searchResults: HTMLElement | null = document.getElementById('search-results');
-  
-  if (!searchInput || !searchResults) return;
-  
-  const experienceItems: NodeListOf<Element> = document.querySelectorAll('[data-searchable="true"]');
-  
-  searchInput.addEventListener('input', (e: Event): void => {
-    const query: string = (e.target as HTMLInputElement).value.toLowerCase().trim();
-    
-    if (!query) {
-      experienceItems.forEach(item => item.classList.remove('hidden'));
-      searchResults.innerHTML = '';
-      return;
-    }
-    
-    let matchCount: number = 0;
-    const matches: string[] = [];
-    
-    experienceItems.forEach(item => {
-      const text: string = item.textContent?.toLowerCase() || '';
-      const title: string = item.querySelector('.title')?.textContent || '';
-      
-      if (text.includes(query)) {
-        item.classList.remove('hidden');
-        matches.push(title);
-        matchCount++;
-      } else {
-        item.classList.add('hidden');
-      }
-    });
-    
-    if (matchCount === 0) {
-      searchResults.innerHTML = '<p class="no-results">No results found</p>';
-    } else {
-      searchResults.innerHTML = `<p class="search-info">Found ${matchCount} result${matchCount !== 1 ? 's' : ''}</p>`;
-    }
-  });
-}
-
 // Newsletter Signup
 function initNewsletter(): void {
   const form: HTMLFormElement | null = document.querySelector('#newsletter-form') as HTMLFormElement;
@@ -187,7 +145,6 @@ if (yearEl) {
 // Initialize all features
 document.addEventListener('DOMContentLoaded', (): void => {
   initDarkMode();
-  initSearch();
   initNewsletter();
   initStatsVisualization();
 });
