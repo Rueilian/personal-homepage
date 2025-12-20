@@ -23,12 +23,15 @@ document.querySelectorAll('a').forEach((element: Element): void => {
     // Handle internal anchor links with smooth scrolling
     if (href.startsWith('#')) {
       const targetId = href;
-      if (targetId === '#') return;
+      e.preventDefault();
       
-      const el: HTMLElement | null = document.querySelector(targetId);
-      if (el) {
-        e.preventDefault();
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (targetId === '#home') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        const el: HTMLElement | null = document.querySelector(targetId);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }
     }
     // External page links will navigate normally (no preventDefault)
