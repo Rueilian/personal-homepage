@@ -7,17 +7,17 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./src/dist",
+    "outDir": ".",
     "rootDir": "./src",
-    "declaration": true,
-    "sourceMap": true
+    "declaration": false,
+    "sourceMap": false
   },
   "include": [
     "src/**/*.ts"
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "src/dist"
   ]
 }
-

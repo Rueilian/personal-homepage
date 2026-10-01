@@ -53,7 +53,7 @@ personal-homepage/
 npm run build
 ```
 
-This compiles TypeScript from `src/script.ts` to `src/dist/script.js`.
+This compiles TypeScript from `src/script.ts` to `script.js`, which is loaded by the homepage.
 
 ## Content Sections
 

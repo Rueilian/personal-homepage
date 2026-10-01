@@ -3,174 +3,77 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>William Ruei-Lian Ting — Personal Homepage</title>
-    <meta name="description" content="Personal homepage of William Ruei-Lian Ting, Senior Student in Electrical Engineering & Interdisciplinary Studies at National Taiwan University.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>William Ruei-Lian Ting | NTU GIEE</title>
+    <meta name="description" content="William Ruei-Lian Ting — M.S. student in Digital ICs and Systems at National Taiwan University.">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <nav class="nav container">
-        <div class="brand">William Ruei‑Lian Ting</div>
-        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-        <button id="dark-mode-toggle" class="dark-mode-btn" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Languages</a></li>
-        </ul>
+      <nav class="wrap nav" aria-label="Primary navigation">
+        <a class="wordmark" href="#home">William Ruei-Lian Ting</a>
+        <div class="nav-links">
+          <a href="#research">Research</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+        </div>
       </nav>
     </header>
 
-    <main id="home" class="container">
-      <section id="stats-container" class="stats-section"></section>
-      <section class="hero">
-        <img class="headshot" src="photos/headshot.jpg" alt="Professional headshot of William Ruei-Lian Ting">
-        <div class="intro">
-          <h1>About Me</h1>
-          <p>
-            Senior Student in Electrical Engineering and Interdisciplinary Studies at National Taiwan University, specializing in <strong>digital IC design</strong>, <strong>artificial intelligence</strong>, and <strong>quantum technology</strong>. Experienced in <strong>RFSoC FPGA</strong> and <strong>edge AI deployment</strong> projects. Passionate about <strong>research and project leadership</strong>, with a strong focus on innovation and sustainable engineering solutions.
-          </p>
-          <div class="contact">
-            <a href="mailto:rueilian.ting1639@gmail.com" class="btn">Email</a>
-            <a href="https://linkedin.com/in/rueilian-ting-839700329" target="_blank" rel="noopener" class="btn">LinkedIn</a>
-            <a href="https://github.com/Rueilian" target="_blank" rel="noopener" class="btn">GitHub</a>
-          </div>
+    <main id="home" class="wrap">
+      <section class="hero" aria-labelledby="name">
+        <img class="portrait" src="photos/headshot.jpg" alt="Portrait of William Ruei-Lian Ting">
+        <div>
+          <h1 id="name">William Ruei-Lian Ting</h1>
+          <p class="current-role">M.S. Student, Graduate Institute of Electronics Engineering<br>Group A — Digital ICs &amp; Systems, National Taiwan University</p>
+          <p>Digital Circuits &amp; Systems Lab · Advisor: Prof. Chia-Hsiang Yang</p>
+          <p class="summary">Academic Background in Electrical Engineering and Innovation Management. Research interests include digital IC and FPGA systems, quantum control, AI hardware, and system integration.</p>
+          <div class="contact-links"><a href="mailto:rueilian.ting1639@gmail.com">Email</a><a href="https://linkedin.com/in/rueilian-ting-839700329" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Rueilian" target="_blank" rel="noopener">GitHub</a></div>
         </div>
       </section>
 
-      <section id="education" class="section">
-        <h2>Education</h2>
-        <ul class="timeline">
-          <li>
-            <div class="title">B.S. in Electrical Engineering</div>
-            <div class="meta">National Taiwan University — Aug. 2022 – Present</div>
-            <div class="meta-sub">Focus on: Digital Circuit & System, Artificial Intelligence, Quantum Computer | GPA 4.19/4.3 (Top 8%)</div>
-          </li>
-          <li>
-            <div class="title">University Interdisciplinary Bachelor Program</div>
-            <div class="meta">National Taiwan University — Aug. 2022 – Present</div>
-            <div class="meta-sub">Focus on: Innovation Management, Decision Science, Energy Technology</div>
-          </li>
-        </ul>
-      </section>
-
-      <section id="experience" class="section">
-        <h2>Professional Experience</h2>
-        <ul class="timeline">
-          <li>
-            <div class="title">Project Manager, Lander Simulation &amp; Training Solutions</div>
-            <div class="meta">Sep. 2025 – Present</div>
-            <div class="meta-sub">Coordinate technical communication with Taiwan Railway Company</div>
-          </li>
-          <li>
-            <div class="title">Leader, NTUEE Student Association – Academic Affairs Group</div>
-            <div class="meta">Jul. 2024 – Jun. 2025</div>
-            <div class="meta-sub">Managed NTUEE Makerspace Lab and organized workshops for 100+ students</div>
-          </li>
-          <li>
-            <div class="title">Lecturer, LiuYin Education – High-School Math &amp; Natural Science Courses</div>
-            <div class="meta">Jul. 2023 – Jan. 2024</div>
-            <div class="meta-sub">Delivered courses to 100+ students, helping them excel in national exams</div>
-          </li>
-          <li>
-            <div class="title">Digital Circuits &amp; Systems Lab, NTU GIEE</div>
-            <div class="meta">Sep. 2024 – Present | PI: Prof. Chia-Hsiang Yang</div>
-            <ul class="nested-list">
-              <li>
-                <div class="title">NTSC Quantum Technology Project – Digital Control Processor</div>
-                <div class="meta">Sep. 2024 – Present</div>
-                <div class="meta-sub">Design RTL modules enabling scalable digital control on ZCU216 FPGA</div>
-              </li>
-              <li>
-                <div class="title">Synopsys-NTU Joint Research Program – GenAI on edge NPU</div>
-                <div class="meta">Jun. 2025 – Present</div>
-                <div class="meta-sub">Deploy and optimize TinyLlama model on Synopsys Neural Processing Unit</div>
-              </li>
-              <li>
-                <div class="title">Digwise-NTU Collaboration – GenAI for Design-Technology Co-Optimization</div>
-                <div class="meta">Jan. 2025 – Aug. 2025</div>
-                <div class="meta-sub">Designed GenAI application for high-efficiency SPICE-Silicon bias modeling</div>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <section id="achievements" class="section">
-        <h2>Achievements</h2>
-        <ul class="timeline">
-          <li>
-            <div class="title">Design Completion Certificate, IC Design Contest Group E</div>
-            <div class="meta">May. 2025</div>
-          </li>
-          <li>
-            <div class="title">Scholarship, NTU-TSMC Research Center</div>
-            <div class="meta">Apr. 2025 – Jun. 2025</div>
-          </li>
-          <li>
-            <div class="title">NXP Enterprise First Prize, MakeNTU Makeathon</div>
-            <div class="meta">May. 2024</div>
-          </li>
-          <li>
-            <div class="title">First Place, Cornerstone EECS Design and Implementation Final Contest</div>
-            <div class="meta">May. 2023</div>
-          </li>
-        </ul>
-      </section>
-
-      <section id="skills" class="section">
-        <h2>Skills &amp; Expertise</h2>
-        <div class="grid-2">
-          <div>
-            <h3>Programming Languages</h3>
-            <p>Python, C/C++, Verilog</p>
-            <h3>Hardware &amp; Tools</h3>
-            <p>FPGA (Vivado), ZCU216, RFSoC, RTL Design, PCB Design</p>
-          </div>
-          <div>
-            <h3>Specialization</h3>
-            <ul>
-              <li>Digital IC Design (RTL, simulation, verification)</li>
-              <li>Artificial Intelligence &amp; Edge AI</li>
-              <li>Quantum Technology</li>
-              <li>FPGA Development</li>
-              <li>Embedded Systems</li>
-            </ul>
-          </div>
+      <section id="research" class="section" aria-labelledby="research-title">
+        <h2 id="research-title">Research Experience</h2>
+        <div class="entries">
+          <article class="entry"><p class="date">Sep. 2024 — Present</p><div><h3>NTSC Quantum Technology Project — Digital Control Processor</h3><p>Designing RTL modules for scalable digital control on the ZCU216 FPGA, including signal generation, readout, timing control, and system integration.</p></div></article>
+          <article class="entry"><p class="date">Jun. 2025 — Jan. 2026</p><div><h3>Synopsys–NTU Joint Research Program — GenAI on Edge NPU</h3><p>Deployed and optimized TinyLlama on a neural processing unit for edge inference.</p></div></article>
+          <article class="entry"><p class="date">Jan. 2025 — Aug. 2025</p><div><h3>Digwise–NTU Collaboration — GenAI for Design-Technology Co-Optimization</h3><p>Developed a generative-AI application for high-efficiency SPICE–silicon bias modeling.</p></div></article>
         </div>
       </section>
 
-      <section id="certifications" class="section">
-        <h2>Languages &amp; Certifications</h2>
-        <ul>
-          <li><strong>English</strong> – GEPT Higher-Intermediate Certificate, TOEIC 960 (Golden Certificate)</li>
-          <li><strong>Japanese</strong> – JLPT N1 Certificate</li>
-        </ul>
+      <section id="education" class="section" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <div class="entries">
+          <article class="entry"><p class="date">Present</p><div><h3>M.S., Graduate Institute of Electronics Engineering, National Taiwan University</h3><p>Group A — Digital ICs &amp; Systems. Digital Circuits &amp; Systems Lab.</p></div></article>
+          <article class="entry"><p class="date">2022 — 2026</p><div><h3>B.S., Department of Electrical Engineering, National Taiwan University</h3><p>GPA: 4.18/4.3 (top 10%).</p></div></article>
+          <article class="entry"><p class="date">2024 — 2026</p><div><h3>University Interdisciplinary Bachelor Program, National Taiwan University</h3><p>Focus: Innovation Management, Decision Science, and Energy Technology.</p></div></article>
+        </div>
       </section>
 
-      <section id="newsletter" class="section newsletter-section">
-        <h2>Stay Updated</h2>
-        <p>Subscribe to get updates on new projects and insights.</p>
-        <form id="newsletter-form" class="newsletter-form">
-          <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Enter your email" required>
-          <button type="submit" class="btn">Subscribe</button>
-        </form>
-        <div id="newsletter-message" class="newsletter-message"></div>
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <h2 id="experience-title">Selected Experience</h2>
+        <div class="entries">
+          <article class="entry"><p class="date">Sep. 2025 — Present</p><div><h3>Part-time Project Manager, Lander Simulation &amp; Training Solutions</h3><p>Coordinates technical communication with Taiwan Railway Company for a driver-training project.</p></div></article>
+          <article class="entry"><p class="date">Jan. 2026 — Jun. 2026</p><div><h3>Lecturer &amp; Teaching Assistant, Sustainable Engineering Design &amp; Practice</h3><p>Designed AI-powered full-stack IoT development, management, and team-dynamics courses.</p></div></article>
+          <article class="entry"><p class="date">Jun. 2025 — Aug. 2025</p><div><h3>Organizer &amp; Lecturer, NTUEE Changemaker Summer Project</h3><p>Led teams to prototype solutions for social change and delivered innovation and design-thinking workshops.</p></div></article>
+        </div>
       </section>
+
+      <section id="recognition" class="section" aria-labelledby="recognition-title">
+        <h2 id="recognition-title">Recognition</h2>
+        <div class="entries">
+          <article class="entry"><p class="date">2025</p><div><h3>Scholarship, NTU–TSMC Research Center</h3></div></article>
+          <article class="entry"><p class="date">2024</p><div><h3>NXP Enterprise First Prize, MakeNTU Makeathon</h3></div></article>
+          <article class="entry"><p class="date">2023</p><div><h3>First Place, Cornerstone EECS Design and Implementation Final Contest</h3></div></article>
+        </div>
+      </section>
+
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills &amp; Languages</h2>
+        <div class="skill-grid"><div><h3>Technical</h3><p>Digital IC and FPGA system design, Verilog, RTL design, Vivado, ZCU216, RFSoC, Python, C/C++, Artificial Intelligence, and Quantum Computing.</p></div><div><h3>Languages</h3><p>Chinese · English: TOEIC 960 (Golden Certificate), GEPT Higher-Intermediate · Japanese: JLPT N1.</p></div></div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title"><h2 id="contact-title">Contact</h2><p><a href="mailto:rueilian.ting1639@gmail.com">rueilian.ting1639@gmail.com</a> · <a href="https://linkedin.com/in/rueilian-ting-839700329" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://github.com/Rueilian" target="_blank" rel="noopener">GitHub</a></p></section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container small">
-        © <span id="year"></span> William Ruei‑Lian Ting. All rights reserved.
-      </div>
-    </footer>
-
+    <footer class="wrap">© <span id="year"></span> William Ruei-Lian Ting</footer>
     <script src="script.js"></script>
   </body>
-  </html>
-
-
+</html>
